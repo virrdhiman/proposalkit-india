@@ -1,0 +1,9 @@
+import type { Metadata } from "next";
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
+
+export const metadata: Metadata = { title: "Proposal and invoice templates for India", description: "Free, editable templates for GST invoices, web design proposals, SEO proposals and app development proposals.", alternates: { canonical: "https://proposalkit.in/templates" } };
+
+const templates = [{ slug: "gst-invoice-generator-for-freelancers", title: "GST invoice generator for freelancers", text: "A quick way to create accurate GST invoices with Indian tax splits and amount in words." }, { slug: "web-design-proposal-template-india", title: "Web design proposal template India", text: "A client-ready structure for website strategy, design, build, launch and support." }, { slug: "seo-proposal-template", title: "SEO proposal template", text: "Set expectations with a clear SEO scope, deliverables, reporting cadence and investment." }, { slug: "app-development-proposal-template", title: "App development proposal template", text: "Turn a product brief into a focused app roadmap, milestones and commercial terms." }];
+
+export default function TemplatesPage() { return <section className="section"><div className="container"><div className="section-heading"><div className="eyebrow">Free resources</div><h1>Templates that help good work get chosen.</h1><p>Start with a proven structure, personalise it with your brand and export a polished document.</p></div><div className="template-grid">{templates.map((template) => <Link className="template-card" href={`/templates/${template.slug}`} key={template.slug}><div className="eyebrow">Template</div><h3>{template.title}</h3><p>{template.text}</p><span className="button button-quiet" style={{ paddingLeft: 0, marginTop: ".8rem" }}>Read template guide <ArrowRight size={15} /></span></Link>)}</div></div></section>; }

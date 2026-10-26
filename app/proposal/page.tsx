@@ -1,0 +1,10 @@
+import type { Metadata } from "next";
+import { ProposalBuilder } from "@/components/ProposalBuilder";
+import { JsonLd } from "@/components/JsonLd";
+
+export const metadata: Metadata = { title: "AI proposal generator for Indian freelancers", description: "Create and export polished proposals for web design, apps, SEO, video and consulting projects.", alternates: { canonical: "https://proposalkit.in/proposal" } };
+
+export default function ProposalPage() {
+  const faq = [{ "@type": "Question", name: "Can I edit the AI proposal?", acceptedAnswer: { "@type": "Answer", text: "Yes. Every generated section is an editable field before you export the PDF." } }, { "@type": "Question", name: "Do I need an account?", acceptedAnswer: { "@type": "Answer", text: "No. ProposalKit India works without sign-in and saves data locally in your browser." } }, { "@type": "Question", name: "What project types are supported?", acceptedAnswer: { "@type": "Answer", text: "Web design, app development, SEO, video, consulting and other custom projects." } }, { "@type": "Question", name: "Is AI required?", acceptedAnswer: { "@type": "Answer", text: "No. If AI is unavailable, the tool creates a clean editable template from your inputs." } }, { "@type": "Question", name: "Can I add my logo?", acceptedAnswer: { "@type": "Answer", text: "Yes. Upload a PNG, JPG or SVG up to 2 MB. It stays on your device and appears in the PDF." } }, { "@type": "Question", name: "Can I download a PDF?", acceptedAnswer: { "@type": "Answer", text: "Yes. Generate the draft, edit the content and download a browser-created PDF." } }];
+  return <><JsonLd data={{ "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faq }} /><JsonLd data={{ "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: "Home", item: "https://proposalkit.in" }, { "@type": "ListItem", position: 2, name: "Proposal generator", item: "https://proposalkit.in/proposal" }] }} /><ProposalBuilder /></>;
+}
