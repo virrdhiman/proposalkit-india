@@ -1,0 +1,12 @@
+# ProposalKit India
+
+ProposalKit India is a free browser-based proposal and GST invoice generator for Indian freelancers and small agencies.
+
+- Home: https://proposalkit.in/
+- Proposal generator: https://proposalkit.in/proposal
+- GST invoice generator: https://proposalkit.in/invoice
+- Templates: https://proposalkit.in/templates
+- Privacy: https://proposalkit.in/privacy
+- Terms: https://proposalkit.in/terms
+
+The app does not require sign-in. Document data and branding are stored in the browser. AI proposal drafting is optional; when used, proposal inputs are sent to the configured AI provider through a server route.
