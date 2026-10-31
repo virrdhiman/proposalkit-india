@@ -2,7 +2,7 @@
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fvirrdhiman%2Fproposalkit-india&project-name=proposalkit-india&repository-name=proposalkit-india&env=GROQ_API_KEY&envDescription=Optional%3A%20Groq%20API%20key%20for%20AI%20proposal%20drafts.%20Leave%20blank%20to%20use%20the%20built-in%20editable%20templates.&envLink=https%3A%2F%2Fconsole.groq.com%2Fkeys)
 
-**Live demo:** _coming soon_ <!-- Replace with the Vercel URL once deployed -->
+**Live demo:** [https://proposalkit-india.vercel.app](https://proposalkit-india.vercel.app)
 
 | Proposal generator | GST invoice generator |
 | --- | --- |
