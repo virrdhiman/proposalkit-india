@@ -1,5 +1,13 @@
 # ProposalKit India
 
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fvirrdhiman%2Fproposalkit-india&project-name=proposalkit-india&repository-name=proposalkit-india&env=GROQ_API_KEY&envDescription=Optional%3A%20Groq%20API%20key%20for%20AI%20proposal%20drafts.%20Leave%20blank%20to%20use%20the%20built-in%20editable%20templates.&envLink=https%3A%2F%2Fconsole.groq.com%2Fkeys)
+
+**Live demo:** _coming soon_ <!-- Replace with the Vercel URL once deployed -->
+
+| Proposal generator | GST invoice generator |
+| --- | --- |
+| ![Proposal generator with demo client Priya Sharma](docs/screenshot-proposal.png) | ![GST invoice with IGST for Haryana to Rajasthan supply](docs/screenshot-invoice.png) |
+
 Free, local-first proposal and GST invoice generator for Indian freelancers and small agencies. Create polished PDFs without an account; optional AI proposal drafting uses a server-only Groq-compatible API key.
 
 ## Features
@@ -11,6 +19,12 @@ Free, local-first proposal and GST invoice generator for Indian freelancers and 
 - Browser-only logo and branding settings (PNG/JPG/SVG, max 2 MB), with remove-logo control.
 - Local save/reuse for clients and a JSON export/import flow.
 - SEO pages, metadata, sitemap, robots, `llms.txt`, JSON-LD and accessibility-friendly forms.
+
+## Deploy on Vercel
+
+1. Click **Deploy with Vercel** above and sign in with GitHub.
+2. `GROQ_API_KEY` is **optional**. Leave it blank and the app still builds and runs; the proposal page falls back to editable templates. Add a key later under Project → Settings → Environment Variables to turn on AI drafts.
+3. After the first deploy, paste the URL into the **Live demo** line at the top of this README.
 
 ## Run locally
 
