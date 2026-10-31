@@ -1,5 +1,9 @@
 # ProposalKit India
 
+**Live demo:** coming soon
+
+![ProposalKit India — proposal and GST invoice screens](docs/screenshot.png)
+
 Free, local-first proposal and GST invoice generator for Indian freelancers and small agencies. Create polished PDFs without an account; optional AI proposal drafting uses a server-only Groq-compatible API key.
 
 ## Features
@@ -76,3 +80,7 @@ git switch -c feature/proposalkit-india
 - [ ] Export/import JSON in a clean browser profile.
 - [ ] Run `npm run typecheck`, `npm run lint`, `npm test`, `npm run test:e2e` and `npm run build`.
 - [ ] Check mobile keyboard navigation, contrast, focus states and PDF text before launch.
+
+## Deploy on Vercel
+
+Import the repo in Vercel (framework auto-detected as Next.js, no `vercel.json` needed). `GROQ_API_KEY` is optional: without it the AI draft button returns an editable local template instead.
